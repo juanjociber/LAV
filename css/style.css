@@ -147,10 +147,8 @@ h4{
 }
 .comunicaciones{
     width: 100%;
-    background-color:rgb(0 0 0 / 60%);
     padding-bottom: 1rem;
     padding-top: 1.5rem;
-    border-radius: 5px;
 }
 .comunicaciones__enlace{
     color: var(--blanco);
@@ -194,18 +192,16 @@ h4{
     width: 75%;
     height: auto;
     position: fixed;
-    padding: 1rem 1.2rem;
     z-index: 99;
     left: -100%;
 }
 .navegacion__enlace{
     display: block;
     color: var(--blanco);
-    padding: 1.3rem 1rem;
-    border: 1px solid var(--grisclaro);
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--grisclaro);
     border-radius: 3px;
     margin-left: 0.2rem;
-    margin-bottom: -10px;
     text-shadow: var(--grisoscuro) 0 2px 4px;
     font-size: 1.5rem;
 }
