@@ -198,7 +198,8 @@ h4{
 .navegacion__enlace{
     display: block;
     color: var(--blanco);
-    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-bottom: 2.5rem;
     border-bottom: 1px solid var(--grisclaro);
     border-radius: 3px;
     margin-left: 0.2rem;
