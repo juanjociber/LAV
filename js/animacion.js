@@ -16,10 +16,33 @@ document.addEventListener('DOMContentLoaded',function(){
 			});
 		};
     });
-})  
+})
 
 
-/**ANIMACIÓN ENLACE */
+/**=============================================
+* EVENTO A SLIDER EN EL INDEX
+* =============================================*/
+var item=["./img/Cilube/cilube1.jpg","./img/Cilube/cilube2.jpg","./img/Cilube/cilube3.jpg","./img/Cilube/cilube4.jpg",
+            "./img/Cilube/cilube5.jpg","/img/Cilube/cilube6.jpg","./img/Cilube/cilube7.jpg",
+            "./img/Cilube/cilube8.jpg", "./img/Cilube/cilube9.jpg","./img/Cilube/cilube10.jpg"];
+var i=0;
+function slider1(){
+   $("#idIMG").attr("src", item[i]);
+   i++;
+   if(i>=item.length)i=0;
+   estado=setTimeout(slider1,3000);
+}
+slider1();
+
+//ASIGNADO EVENTO A CIRCULOS
+// $(".bolita").click(function(){
+//     //Obtiene valor de enlace donde se ejecuta el click
+//     var num;
+//     num=$(this).text();
+//     //Muestra imagen segun número
+//     $("#idIMG").attr("src",item[num-1]);
+// })
+
 /*========= EVENTO PARA ABRIR VENTANA EMERGENTE ==========*/
 $(".card__enlace").click(function(){
     $("#idPopup").css("display","block");
