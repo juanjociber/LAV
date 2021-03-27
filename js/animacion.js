@@ -1,5 +1,7 @@
 "use strict"
-/**============= EVENTO MENÚ ============== */
+/**=========================================
+ * EVENTO PARA MENU RESPONSIVE
+ * ========================================= */
 let contador = 1;
 document.addEventListener('DOMContentLoaded',function(){
     $('.menu').click(function(){
@@ -17,10 +19,6 @@ document.addEventListener('DOMContentLoaded',function(){
 		};
     });
 })
-
-
-
-
 
 /**ANIMACIÓN ENLACE */
 /*========= EVENTO PARA ABRIR VENTANA EMERGENTE ==========*/
@@ -142,7 +140,9 @@ $(".cerrar").click(function(){
     $("#idPopup16").css("display","none");
 })
 
-/**EVENTO DE IMAGENES EN PÁGIBA NOSOTROS */
+/**============================================
+ * EVENTO DE IMAGENES EN PÁGINA NOSOTROS 
+ * ============================================*/
 let animacion = document.querySelectorAll('.imagen');
 
 window.addEventListener('scroll',function(){
@@ -156,7 +156,9 @@ window.addEventListener('scroll',function(){
     }
 });
 
-/**EVENTO DE TEXTO EN PÁGINA NOSOTRROS */
+/**============================================
+ * EVENTO DE TEXTO EN PÁGINA NOSOTROS 
+ * ============================================*/
 let animado = document.querySelectorAll(".animacion");
 
 window.addEventListener('scroll', function(){
@@ -170,8 +172,6 @@ window.addEventListener('scroll', function(){
     }
 });
 
-
-
 /**=============================================
 * EVENTO A SLIDER EN EL INDEX
 * =============================================*/
@@ -179,37 +179,18 @@ var item=["./img/Cilube/cilube1.jpg","./img/Cilube/cilube2.jpg","./img/Cilube/ci
             "./img/Cilube/cilube5.jpg","/img/Cilube/cilube6.jpg","./img/Cilube/cilube7.jpg",
             "./img/Cilube/cilube8.jpg", "./img/Cilube/cilube9.jpg","./img/Cilube/cilube10.jpg"];
 var i=0;
-function slider1(){
+function slider(){
    $("#idIMG").attr("src", item[i]);
    i++;
-   if(i>=item.length)i=0;
-   estado=setTimeout(slider1,3000);
+   if(i>=item.length)
+    i=0;
+    setTimeout(slider,3000);
 }
-slider1();
+slider();
 
-//ASIGNADO EVENTO A CIRCULOS
-// $(".bolita").click(function(){
-//     //Obtiene valor de enlace donde se ejecuta el click
-//     var num;
-//     num=$(this).text();
-//     //Muestra imagen segun número
-//     $("#idIMG").attr("src",item[num-1]);
-// })
-
-/**ANIMACIÓN CONTÁCTENOS*/ 
-// setInterval (BlinkIt, 800);
-//     var color = "white";
-//     function BlinkIt () {
-//         var blink = document.getElementById ("idContactenos");
-//         color = (color == "var(--grisclaro)")? "var(--azul)" : "var(--grisclaro)";
-//         blink.style.color = color;
-//         blink.style.fontFamily= 'Newsreader', 'serif';
-//     }
-
-/**ANIMACIÓN NOSOTROS */
-
-
-/**ANIMACIÓN PRODUCTOS*/
+/**==============================================
+ * EVENTO PARA CARD DE PRODUCTOS
+ * ==============================================*/
 var card = document.getElementsByClassName('card-producto');
 for(var i = 0 ; i < card.length ; i++){
     card[i].onmouseover=function(){
@@ -220,7 +201,9 @@ for(var i = 0 ; i < card.length ; i++){
     }
 }
 
-/*ANIMACIÓN DE ICONOS*/
+/*=================================================
+EVENTO PARA ICONOS
+===================================================*/
 var iconos = document.getElementsByClassName('icon-tabler');
 for(var i = 0 ; i < iconos.length ; i++){
     iconos[i].onmouseover=function(){
@@ -230,21 +213,6 @@ for(var i = 0 ; i < iconos.length ; i++){
         this.style='transform:scale(1)'; 
     }
 }
-
-/**=============================================
-* EVENTO FEHA Y HORA
-n =  new Date();
-y = n.getFullYear();
-p = n.getMonth()+1;
-d = n.getDate();
-h = n.getHours();
-m = n.getMinutes();
-var tiempo="Hrs.";
-var mes=(p<10)?'0'+p:p;
-var minuto=(m<10)?'0'+m:m;
-var hora=(h<10)?'0'+h:h;
-document.getElementById("fechaHora").innerText = "Fecha de ingreso : "+d+"/"+mes+"/"+y+"\nHora de ingreso : "+hora+":"+minuto+" "+tiempo;
-* =============================================*/
 
 
 
