@@ -105,7 +105,7 @@
         </nav>
     </header><!-- .header -->
          
-    <section class="banner">
+    <section class="banner" id="particles-js">
         <div class="contenido-banner">
             <div class="logo-lubricante-banner">
                 <div class="american-banner">
@@ -124,7 +124,7 @@
 
             <div class="catalogo">
                 <img class="catalogo__imagen" src="./img/catalogo.svg" alt="logo catalogo" width="35" height="35">
-                <a class="catalogo__enlace" href="./doc/CatalogoLavAmerican.pdf" target="_blank" title="Catálogo de productos">Catálogo</a>
+                <a class="catalogo__enlace" href="https://online.flippingbook.com/view/82743990/" target="_blank" title="Catálogo de productos">Catálogo</a>
             </div>
             <h1><span class="abreviatura">l.a.v</span> Inversiones</h1>
             <p class="subtitulo-banner">Distribuidor Autorizado</p>
@@ -134,57 +134,58 @@
 
         <main aria-hidden="true" class="main container">
             <h2 id="contactenos">Contáctenos</h2>
+
             <form class="formulario" name="contact" method="POST" data-netlify="true" action="/pag">
-                <fieldset>
-                    <legend>Formulario de contacto</legend>
-                
-                <div class="contenedor-campos">
-                    <div class="campo">
-                        <label>Nombres</label>
-                        <input class="input-text" type="text" name="name" placeholder="Nombres" required>
-                    </div>
-
-                    <div class="campo">
-                        <label>Apellidos</label>
-                        <input class="input-text" type="text" name="surname" placeholder="Apellidos" required>
-                    </div>
-
-                    <div class="campo">
-                        <label>Dirección</label>
-                        <input class="input-text" type="text" name="direction" placeholder="Dirección" required>
-                    </div>
-
-                    <div class="campo">
-                        <label>Empresa</label>
-                        <input class="input-text" type="text" name="company" placeholder="Nombre de Empresa" required>
-                    </div>
-
-                    <div class="campo">
-                        <label>RUC</label>
-                        <input class="input-text" type="tel" name="ruc" placeholder="RUC" required>
-                    </div>
-
-                    <div class="campo">
-                        <label>Celular</label>
-                        <input class="input-text" type="tel" name="phone" placeholder="Celular" required>
-                    </div>
-                    
-                    <div class="campo">
-                        <label>Email</label>
-                        <input class="input-text" type="email" name="email" placeholder="email" required>
-                    </div>
+                <div class="form">
+                    <fieldset>
+                        <legend>Formulario de contacto</legend>
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label>Nombres</label>
+                            <input class="input-text" type="text" name="name" placeholder="Nombres" required>
+                        </div>
     
-                    <div class="campo">
-                        <label>Mensaje</label>
-                        <textarea class="input-text" name="message" required></textarea>
+                        <div class="campo">
+                            <label>Apellidos</label>
+                            <input class="input-text" type="text" name="surname" placeholder="Apellidos" required>
+                        </div>
+    
+                        <div class="campo">
+                            <label>Dirección</label>
+                            <input class="input-text" type="text" name="direction" placeholder="Dirección" required>
+                        </div>
+    
+                        <div class="campo">
+                            <label>Empresa</label>
+                            <input class="input-text" type="text" name="company" placeholder="Nombre de Empresa" required>
+                        </div>
+    
+                        <div class="campo">
+                            <label>RUC</label>
+                            <input class="input-text" type="tel" name="ruc" placeholder="RUC" required>
+                        </div>
+    
+                        <div class="campo">
+                            <label>Celular</label>
+                            <input class="input-text" type="tel" name="phone" placeholder="Celular" required>
+                        </div>
+                        
+                        <div class="campo">
+                            <label>Email</label>
+                            <input class="input-text" type="email" name="email" placeholder="email" required>
+                        </div>
+        
+                        <div class="campo">
+                            <label>Mensaje</label>
+                            <textarea class="input-text" name="message" required></textarea>
+                        </div>
+                    </div><!--.contenedor-campos-->
+    
+                    <div class="alinear-derecha flex">
+                        <input class="boton btn w-sm-100" type="submit" value="Enviar">
                     </div>
-                </div><!--.contenedor-campos-->
-
-                <div class="alinear-derecha flex">
-                    <input class="boton btn w-sm-100" type="submit" value="Enviar">
-                </div>
-
                 </fieldset>
+            </div>    
             </form>
         </main>
         <footer class="footer-container">
@@ -226,6 +227,8 @@
     <!--.container-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Swiper JS -->
+    <script src="./js/particles.min.js"></script>
+    <script src="./js/app.js"></script>
     <script src="./js/animacion.js"></script>
     <script src="./js/modernizr.js"></script>
 </body>
