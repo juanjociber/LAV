@@ -896,7 +896,7 @@ h4{
     position: relative;
    
 }
-.form{
+.form-caja{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -968,8 +968,9 @@ fieldset legend{
     margin-bottom: .5rem;
     outline: none;
     border-style: solid;
-    border: 1px solid #eee8e81c;
-    background-color: #d8d3d33d;
+    border: 1px solid #DBDBDB1A;
+    background-color:#DBDBDB1A;
+    
     /* text-overflow: ellipsis; */
     color: var(--blanco);
     
@@ -979,7 +980,8 @@ fieldset legend{
     font-size: 1.3rem;
 }
 .input-text:hover{
-    background-color:#DBDBDB1A;
+    border: 1px solid #eee8e81c;
+    background-color: #d8d3d33d;
 }
 input[type="submit"]{
     outline: none;
