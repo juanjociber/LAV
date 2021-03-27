@@ -66,16 +66,13 @@ h2{
     text-align: center;
     font-size: 1.8rem;
     text-transform: uppercase;
-    border: 1px solid rgb(0 79 159 / 15%);
     color: var(--azul);
     border-radius: 5px;
     margin-bottom: 3rem;
     animation: parpadeo 2s linear infinite;
     transition: border .2s ease-out;
 }
-h2:hover{
-    border: 2px solid rgb(0 79 159);
-}
+
 @keyframes parpadeo{
     0%, 41%, 45%, 47%, 49.5%, 100%  { 
         opacity: 1;
@@ -87,7 +84,6 @@ h2:hover{
 }
 @media (min-width: 482px) {
     h2{
-        border: 2px solid var(--azul);
         background-image: none;
         color: var(--azul);
         text-shadow: none;
@@ -146,6 +142,11 @@ h4{
 }
 .texto-justificado{
     text-align: justify;
+}
+.texto-bloque{
+    width: 100%;
+    display: block;
+    text-align: center;
 }
 
 /*============================================================
@@ -890,7 +891,7 @@ h4{
     background-repeat: no-repeat;
     background-position: center center;
     width: min(50rem, 100%);
-    height: 67rem;
+    height: 70rem;
     margin: auto;
     border-radius: 0.5rem;
     position: relative;
@@ -901,25 +902,20 @@ h4{
     width: 100%;
     height: 100%;
     background-color: rgb(0 0 0 / 75%);
-    
 }
-
 fieldset{
     border: none;
-        
 }
-
 fieldset legend{
     display: block;
     width: 100%;
-    text-align: center;
-    margin-top: 2rem;
+    text-align: justify;
     margin-bottom: 2rem;
-    text-transform: uppercase;
-    font-size: 1.8rem;
+    padding-top: 1rem;
+    font-size: 2.2rem;
     font-weight: 700;
-    color: var(--blanco);
-    text-shadow: var(--blancohumo) 0 1px 20px;
+    color: var(--amarilloOscuro);
+    text-shadow: var(--grisoscuro) 0 1px 10px;
 }
 @media (min-width: 768px){
     .formulario{
@@ -953,9 +949,10 @@ fieldset legend{
 }
 .campo label{
     display: block;
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: .5rem;
     color: var(--blanco);
+    
 }
 .campo textarea{
     height: 8rem;
@@ -980,8 +977,8 @@ fieldset legend{
     font-size: 1.3rem;
 }
 .input-text:hover{
-    border: 1px solid #eee8e81c;
-    background-color: #d8d3d33d;
+    border: 1px solid #e9e5e54b;
+    background-color: #e9e5e54b;
 }
 input[type="submit"]{
     outline: none;
@@ -1004,6 +1001,7 @@ input[type="submit"]{
     background-color: #ff404052 !important;
     border: none !important;
     text-shadow: none !important;
+    font-weight: 700;
 }
 /*========================================================
                     ESTILO FOOTER
