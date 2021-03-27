@@ -18,6 +18,10 @@ document.addEventListener('DOMContentLoaded',function(){
     });
 })
 
+
+
+
+
 /**ANIMACIÓN ENLACE */
 /*========= EVENTO PARA ABRIR VENTANA EMERGENTE ==========*/
 $(".card__enlace").click(function(){
@@ -138,6 +142,36 @@ $(".cerrar").click(function(){
     $("#idPopup16").css("display","none");
 })
 
+/**EVENTO DE IMAGENES EN PÁGIBA NOSOTROS */
+let animacion = document.querySelectorAll('.imagen');
+
+window.addEventListener('scroll',function(){
+    let sTop = document.documentElement.scrollTop;//El scrollTop es la cantidad de scroll a medida que uno baja
+    for (let i = 0; i < animacion.length; i++) {
+        let altura = animacion[i].offsetTop; //detección de altura desde la altura de la venta hasta donde esta el elemento
+        if(altura - 600 < sTop){
+            animacion[i].style.animation = 'mover .7s ease-out';
+            animacion[i].style.opacity = 1;
+        }
+    }
+});
+
+/**EVENTO DE TEXTO EN PÁGINA NOSOTRROS */
+let animado = document.querySelectorAll(".animacion");
+
+window.addEventListener('scroll', function(){
+    let scrollTop = document.documentElement.scrollTop;
+    for (let i = 0; i < animado.length; i++){
+        let alturaAnimado = animado[i].offsetTop;
+        if(alturaAnimado - 300 < scrollTop){
+            animado[i].style.opacity = 2;
+            // animado[i].classList.add('mostrarArriba');
+        }
+    }
+});
+
+
+
 /**=============================================
 * EVENTO A SLIDER EN EL INDEX
 * =============================================*/
@@ -211,3 +245,8 @@ var minuto=(m<10)?'0'+m:m;
 var hora=(h<10)?'0'+h:h;
 document.getElementById("fechaHora").innerText = "Fecha de ingreso : "+d+"/"+mes+"/"+y+"\nHora de ingreso : "+hora+":"+minuto+" "+tiempo;
 * =============================================*/
+
+
+
+
+
