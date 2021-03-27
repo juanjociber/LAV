@@ -437,6 +437,20 @@ h4{
 /*==========================================================
                     ESTILO MAIN
 ============================================================*/
+.animacion{
+    opacity: 0;
+    transition: all 2s;
+}
+.imagen{
+    opacity: 0;
+}
+
+@keyframes mover{
+    0%{
+        transform: translateY(50%);
+    }
+}
+
 .section-principal p{
     line-height: 1.5;
 }
@@ -921,6 +935,11 @@ fieldset{
     border-radius: 0.5rem;
     margin-bottom: .5rem;
     outline: none;
+    
+}
+::placeholder{
+    color: grey;
+    font-size: 1.3rem;
 }
 .input-text:hover{
     box-shadow: #f7f7b9 1px 1px 5px;
