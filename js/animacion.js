@@ -215,6 +215,28 @@ for(var i = 0 ; i < iconos.length ; i++){
 }
 
 
+/*=================================================
+NOMBRE DE EMPRESA
+===================================================*/
 
+let escritura = str =>{
+    let arrayStr = str.split('');
+    let i = 0;
+    let printStr = setInterval(function () {
+       let texto = document.getElementById('nombreEmpresa');
+       if(arrayStr[i] === ''){
+           texto.innerHTML += arrayStr[i];
+           texto.innerHTML += arrayStr[i + 1];
+           i +=2;
+       }else{
+           texto.innerHTML += arrayStr[i];
+           i++
+       }
+       if(i=== arrayStr.length){
+           clearInterval(printStr);
+       }
+   },250);
+}
+escritura('L.A.V Inversiones');
 
 
