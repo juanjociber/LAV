@@ -574,7 +574,7 @@ h4{
     bottom: 5px;
     right: 5px;
     width: 100%;
-    height: 100%;
+    height: auto;
     display: none;
     /*margin: auto;*/
     text-align: justify;
@@ -626,6 +626,7 @@ h4{
 .contenedor-contenido li{
     line-height: 1.2;
     font-family: var(--letraSecundaria);
+    font-size: 4vw;
 }
 .cerrar{
     position: relative;
