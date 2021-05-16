@@ -631,6 +631,36 @@ h4{
     font-family: var(--letraSecundaria);
     font-size: 4vw;
 }
+@media(min-width:1200px){
+    .emergente{
+        width: 60% !important;
+    }
+
+}
+@media(min-width:768px){
+    .emergente{
+        margin: 2rem auto;
+        width: 90%;
+        height: auto;
+        /* width: 50%; */
+        /* grid-template-columns: auto auto; */
+        
+    }
+    .contenedor-foto{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        place-self: center;
+        width: auto;
+    }
+    .contenedor-contenido{
+        grid-column: 2 / 3;
+        padding-right:2rem;
+    }
+    .contenedor-contenido li{
+        font-size: 1.5rem;
+    }
+    
+}
 .cerrar{
     position: relative;
 }
@@ -764,32 +794,11 @@ h4{
         padding:  10rem 1rem ;
     }
 }
-@media (min-width: 480px) and (max-width:767px){
+@media (min-width: 482px){
     .emergente{
-        display: grid;
-        grid-template-columns:  repeat(2,1fr);
-        width: min(45rem,100%);
-        margin: 5rem auto;
         position: relative;
     }
-    .box-emergente:nth-child(1){
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-        width: 100%;
-        margin: auto;
-        position: absolute;
-        top: 12rem;
-    }
-    .box-emergente:nth-child(2){
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
-        width: 130%;
-        margin-left: -7rem;
-    }
-    .contenido{
-        font-size: 1.2rem;
-        
-    }
+    
     .contenedor-foto .foto{
         margin-left: -3rem;
     }
@@ -797,6 +806,25 @@ h4{
         transform: scale(1.5);
         transition: all ease-out 2s;
     }
+    .contenedor-contenido li{
+        font-size: 1.5rem;
+    }
+    .cerrar img{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 3rem;
+        border: none;
+        filter: grayscale(1);
+        z-index: 1;
+    }
+    .cerrar img:hover{
+        transform: scale(1.01);
+        filter: unset;
+    }
+
+
+
 }
 @media (min-width: 576px) {
     .card__nombre{
@@ -840,18 +868,18 @@ h4{
     .card:hover .card__enlace16{
         padding:  10rem 1rem ;
     }
-    .emergente{
+    /* .emergente{
         width: min(90rem, 100%);
         margin:5rem auto;
-    }
-    .contenedor-foto{
+    } */
+    /* .contenedor-foto{
         width: 45% !important;
     }
     .contenedor-contenido{
         width: 55% !important;
         padding-left: 2rem !important;
         padding-right: 3rem !important;
-    }
+    } */
     h4{
         font-size: 1.5rem;
     }
