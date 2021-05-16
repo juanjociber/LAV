@@ -624,7 +624,7 @@ h4{
     padding: 1rem;
 }
 .contenedor-contenido li{
-    line-height: 1.5;
+    line-height: 1.2;
     font-family: var(--letraSecundaria);
 }
 .cerrar{
